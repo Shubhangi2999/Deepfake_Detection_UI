@@ -1,4 +1,4 @@
-# Video_Uploader
+# Deepfake_Detection_UI
 
 Pre-requisites:
   Python3, pip
