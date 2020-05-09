@@ -5,9 +5,9 @@ from .forms import VideoForm
 
 
 
-def hi(request):
+def ShowImageController(request):
     return render(request, 'play/style.html')
-def vid(request):
+def VideoPlayerController(request):
     form = VideoForm(request.POST or None, request.FILES or None)
     if form.is_valid():
         form.save()
