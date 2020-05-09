@@ -27,7 +27,7 @@ SECRET_KEY = '$=tiasb@!n_vz_w_)p^zle33nkqb^()5*u$r^9e4m0+x4x7v#p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['damp-savannah-51132.herokuapp.com']
 
 
 # Application definition
@@ -120,7 +120,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-
+STATIC_ROOT =os.path.join(BASE_DIR,'staticfiles')
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
