@@ -1,9 +1,9 @@
 from django.conf.urls import url
 
-from .views import hi, vid
+from . import views
 
 urlpatterns = [
-    url(r'^style/$', hi),
-    url(r'^vidplayer/$', vid, name="vid_player"),
+    url(r'^style/$', views.ShowImageController),
+    url(r'^vidplayer/$', views.VideoPlayerController , name="vid_player"),
 
  ]

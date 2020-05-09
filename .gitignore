@@ -1,0 +1,5 @@
+main/__pycache__
+main/migrations/__pycache__
+main/migrations/0001_initial.py
+minor/__pycache__
+db.sqlite3
