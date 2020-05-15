@@ -57,7 +57,7 @@ margin : 10px 5px 15px 100px;
     <div id="header"style="background-color:#e91640;">
         <div id="branding">
 
-            <h1 id="site-name" ><strong style="color:#000000;">Video Player</strong></h1>
+            <h1 id="site-name" ><strong style="color:#000000;">Prediction Result</strong></h1>
 
         </div>
 
@@ -77,24 +77,16 @@ margin : 10px 5px 15px 100px;
 <br><br>
 <!--<iframe src="https://vizor.io/sonnunelu/beach" frameborder="0" width=1000 height=1000 allowfullscreen data-token="kkxqMZ" id="frame"></iframe>-->
 
-<h1><strong>The number of entries are {{ count }}</strong> </h1>
+<h1><strong>The result of prediction is: {{ count }}</strong> </h1>
 
-
-
-{% for video in videofile  reversed %}
 
 <div id="demo">
-<div class="desc"><strong>{{ forloop.counter }})&nbsp &nbsp{{ video.name }}</strong></div>
+<div class="desc"><strong>&nbsp &nbsp{{ video.name }}</strong></div>
     <video width='400' controls>
 <source src='{{ MEDIA_URL }}{{ video.videofile }}' type='video/mp4'>
 Your browser does not support the video tag.
 </video>
 </div>
-
-
-
-
-{% endfor %}
 
 
 
